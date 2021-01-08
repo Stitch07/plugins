@@ -211,9 +211,9 @@
         "signature": "1e61418f41d404e744b6536af9f8c6f6674dd4d54c12335cd0c4f7eded69cf3f",
         "affectsGlobalScope": true
       },
-      "../node_modules/tslib/tslib.d.ts": {
-        "version": "9eb0ae9fa333acfc2dcbe6a7eaa2ab8be46b97ca259982c797c39167823235d5",
-        "signature": "9eb0ae9fa333acfc2dcbe6a7eaa2ab8be46b97ca259982c797c39167823235d5",
+      "../../../node_modules/tslib/tslib.d.ts": {
+        "version": "55d7868222288a4054166fecbfbaeee46dd3b1b58e4a118e40e9c8c13a9fbe84",
+        "signature": "55d7868222288a4054166fecbfbaeee46dd3b1b58e4a118e40e9c8c13a9fbe84",
         "affectsGlobalScope": false
       },
       "../../../node_modules/@types/node/globals.d.ts": {
@@ -232,8 +232,8 @@
         "affectsGlobalScope": false
       },
       "../../../node_modules/@types/node/child_process.d.ts": {
-        "version": "987249e7b75023387c5fd9dc2f959ee777cb8989b7900f5a9eb4a67d290f2cba",
-        "signature": "987249e7b75023387c5fd9dc2f959ee777cb8989b7900f5a9eb4a67d290f2cba",
+        "version": "a4b5411d87995b9fb847f491f4388b38f829d8ab39be3e2fd65a3e40709f29a8",
+        "signature": "a4b5411d87995b9fb847f491f4388b38f829d8ab39be3e2fd65a3e40709f29a8",
         "affectsGlobalScope": false
       },
       "../../../node_modules/@types/node/cluster.d.ts": {
@@ -252,8 +252,8 @@
         "affectsGlobalScope": false
       },
       "../../../node_modules/@types/node/crypto.d.ts": {
-        "version": "75d76be86ffc40ae985ebace0cbd2c79b1e10c224c925d91f4df5a2705cc3f76",
-        "signature": "75d76be86ffc40ae985ebace0cbd2c79b1e10c224c925d91f4df5a2705cc3f76",
+        "version": "3d9c3ccc05ebc6e288bef007bcc47a2fc0dce748ea634093ef0732b9be743805",
+        "signature": "3d9c3ccc05ebc6e288bef007bcc47a2fc0dce748ea634093ef0732b9be743805",
         "affectsGlobalScope": false
       },
       "../../../node_modules/@types/node/dgram.d.ts": {
@@ -262,8 +262,8 @@
         "affectsGlobalScope": false
       },
       "../../../node_modules/@types/node/dns.d.ts": {
-        "version": "7db7569fbb3e2b01ba8751c761cdd3f0debd104170d5665b7dc20a11630df3a9",
-        "signature": "7db7569fbb3e2b01ba8751c761cdd3f0debd104170d5665b7dc20a11630df3a9",
+        "version": "d6bc4b879a18de0a1ba065b9a1c6888c67d98f3fe4886584459cdaa9e211a5f7",
+        "signature": "d6bc4b879a18de0a1ba065b9a1c6888c67d98f3fe4886584459cdaa9e211a5f7",
         "affectsGlobalScope": false
       },
       "../../../node_modules/@types/node/domain.d.ts": {
@@ -287,8 +287,8 @@
         "affectsGlobalScope": false
       },
       "../../../node_modules/@types/node/http.d.ts": {
-        "version": "35fe02b2c10616cc7ac3db9c15778df7ed9c99276889efdd9be31f342841cfcd",
-        "signature": "35fe02b2c10616cc7ac3db9c15778df7ed9c99276889efdd9be31f342841cfcd",
+        "version": "f2f8a385694fd71a421616cbaca477a539f30f4098f11261b1d188d72dc3478a",
+        "signature": "f2f8a385694fd71a421616cbaca477a539f30f4098f11261b1d188d72dc3478a",
         "affectsGlobalScope": false
       },
       "../../../node_modules/@types/node/http2.d.ts": {
@@ -312,8 +312,8 @@
         "affectsGlobalScope": false
       },
       "../../../node_modules/@types/node/net.d.ts": {
-        "version": "8de97668870cfb20fc9d355d2ef379e897bdd8a98c889c7d8a6de40ee408ad52",
-        "signature": "8de97668870cfb20fc9d355d2ef379e897bdd8a98c889c7d8a6de40ee408ad52",
+        "version": "5345d90ffb42ef6a15807f494b38b818f668f5fd6e5086586497ea0125334cd4",
+        "signature": "5345d90ffb42ef6a15807f494b38b818f668f5fd6e5086586497ea0125334cd4",
         "affectsGlobalScope": false
       },
       "../../../node_modules/@types/node/os.d.ts": {
@@ -387,8 +387,8 @@
         "affectsGlobalScope": false
       },
       "../../../node_modules/@types/node/url.d.ts": {
-        "version": "80ffc1786a5dab91b4aa59a72720f02f25df8b7c76b593e04d5e381aec284ccb",
-        "signature": "80ffc1786a5dab91b4aa59a72720f02f25df8b7c76b593e04d5e381aec284ccb",
+        "version": "4001971b90f18161f7bd46d68150d32a5da47e3f177956a267a2b29a2771896a",
+        "signature": "4001971b90f18161f7bd46d68150d32a5da47e3f177956a267a2b29a2771896a",
         "affectsGlobalScope": false
       },
       "../../../node_modules/@types/node/util.d.ts": {
@@ -447,8 +447,8 @@
         "affectsGlobalScope": false
       },
       "../../../node_modules/@types/node/index.d.ts": {
-        "version": "5825520e2099309182c6e2a2b3061b060d42a098c58f67d1754880a7e2cce99a",
-        "signature": "5825520e2099309182c6e2a2b3061b060d42a098c58f67d1754880a7e2cce99a",
+        "version": "744e6430bafc6f39f66c4fc1e6a0d8c9551260ffd1782aa7e3f5166ac6aa1f86",
+        "signature": "744e6430bafc6f39f66c4fc1e6a0d8c9551260ffd1782aa7e3f5166ac6aa1f86",
         "affectsGlobalScope": false
       },
       "../../../node_modules/@discordjs/collection/dist/index.d.ts": {
@@ -456,7 +456,7 @@
         "signature": "7be7f76b784383fa84812ca7eb8ad10315c9d482c0d25f178645365405509d44",
         "affectsGlobalScope": false
       },
-      "../../../node_modules/@sapphire/pieces/dist/index.d.ts": {
+      "../../../node_modules/@sapphire/framework/node_modules/@sapphire/pieces/dist/index.d.ts": {
         "version": "981dd41f2d68f822dad61e159a4d326f21538aff64d22852e3db586de7f1cdea",
         "signature": "981dd41f2d68f822dad61e159a4d326f21538aff64d22852e3db586de7f1cdea",
         "affectsGlobalScope": false
@@ -532,8 +532,8 @@
         "affectsGlobalScope": false
       },
       "../../../node_modules/@sapphire/framework/dist/index.d.ts": {
-        "version": "91d0516736468a4e426035b45d3cfc72ba23f139d5b535460bfaefa6d110e6b9",
-        "signature": "91d0516736468a4e426035b45d3cfc72ba23f139d5b535460bfaefa6d110e6b9",
+        "version": "cb39f558e69d67a89c53cd955d6bbc013010b86f8d1359ed6c9d351db2ac48c1",
+        "signature": "cb39f558e69d67a89c53cd955d6bbc013010b86f8d1359ed6c9d351db2ac48c1",
         "affectsGlobalScope": false
       },
       "../../../node_modules/colorette/colorette.d.ts": {
@@ -712,8 +712,8 @@
         "affectsGlobalScope": false
       },
       "../../../node_modules/@types/jest/index.d.ts": {
-        "version": "08c4a97a324b82f7dbc02b9e2bb278b7bb13c160e04e23a16dd04f9d732da20a",
-        "signature": "08c4a97a324b82f7dbc02b9e2bb278b7bb13c160e04e23a16dd04f9d732da20a",
+        "version": "71f30fba971582dc744373cbc8b06c1eb64dc24a6ccbc9b457f94fb68c67cb4e",
+        "signature": "71f30fba971582dc744373cbc8b06c1eb64dc24a6ccbc9b457f94fb68c67cb4e",
         "affectsGlobalScope": true
       },
       "../../../node_modules/@types/json-schema/index.d.ts": {
@@ -814,14 +814,14 @@
         "../../../node_modules/@babel/types/lib/index.d.ts"
       ],
       "../../../node_modules/@sapphire/framework/dist/index.d.ts": [
-        "../../../node_modules/@sapphire/pieces/dist/index.d.ts",
+        "../../../node_modules/@sapphire/framework/node_modules/@sapphire/pieces/dist/index.d.ts",
         "../../../node_modules/@types/node/events.d.ts",
         "../../../node_modules/@types/node/index.d.ts",
         "../../../node_modules/@types/node/url.d.ts",
         "../../../node_modules/discord.js/typings/index.d.ts",
         "../../../node_modules/lexure/dist/types/index.d.ts"
       ],
-      "../../../node_modules/@sapphire/pieces/dist/index.d.ts": [
+      "../../../node_modules/@sapphire/framework/node_modules/@sapphire/pieces/dist/index.d.ts": [
         "../../../node_modules/@discordjs/collection/dist/index.d.ts"
       ],
       "../../../node_modules/@sapphire/time-utilities/dist/index.d.ts": [
@@ -1139,7 +1139,7 @@
       ],
       "../src/index.ts": [
         "../../../node_modules/@sapphire/framework/dist/index.d.ts",
-        "../node_modules/tslib/tslib.d.ts",
+        "../../../node_modules/tslib/tslib.d.ts",
         "../src/lib/Logger.ts",
         "../src/lib/LoggerLevel.ts",
         "../src/lib/LoggerStyle.ts",
@@ -1151,27 +1151,27 @@
         "../../../node_modules/@types/node/console.d.ts",
         "../../../node_modules/@types/node/util.d.ts",
         "../../../node_modules/colorette/colorette.d.ts",
-        "../node_modules/tslib/tslib.d.ts",
+        "../../../node_modules/tslib/tslib.d.ts",
         "../src/lib/LoggerLevel.ts"
       ],
       "../src/lib/LoggerLevel.ts": [
-        "../node_modules/tslib/tslib.d.ts",
+        "../../../node_modules/tslib/tslib.d.ts",
         "../src/lib/LoggerStyle.ts",
         "../src/lib/LoggerTimestamp.ts"
       ],
       "../src/lib/LoggerStyle.ts": [
         "../../../node_modules/colorette/colorette.d.ts",
-        "../node_modules/tslib/tslib.d.ts"
+        "../../../node_modules/tslib/tslib.d.ts"
       ],
       "../src/lib/LoggerTimestamp.ts": [
         "../../../node_modules/@sapphire/time-utilities/dist/index.d.ts",
-        "../node_modules/tslib/tslib.d.ts",
+        "../../../node_modules/tslib/tslib.d.ts",
         "../src/lib/LoggerStyle.ts"
       ],
       "../src/register.ts": [
         "../../../node_modules/@sapphire/framework/dist/index.d.ts",
         "../../../node_modules/discord.js/typings/index.d.ts",
-        "../node_modules/tslib/tslib.d.ts",
+        "../../../node_modules/tslib/tslib.d.ts",
         "../src/index.ts",
         "../src/lib/Logger.ts"
       ]
@@ -1181,14 +1181,14 @@
         "../../../node_modules/@babel/types/lib/index.d.ts"
       ],
       "../../../node_modules/@sapphire/framework/dist/index.d.ts": [
-        "../../../node_modules/@sapphire/pieces/dist/index.d.ts",
+        "../../../node_modules/@sapphire/framework/node_modules/@sapphire/pieces/dist/index.d.ts",
         "../../../node_modules/@types/node/events.d.ts",
         "../../../node_modules/@types/node/index.d.ts",
         "../../../node_modules/@types/node/url.d.ts",
         "../../../node_modules/discord.js/typings/index.d.ts",
         "../../../node_modules/lexure/dist/types/index.d.ts"
       ],
-      "../../../node_modules/@sapphire/pieces/dist/index.d.ts": [
+      "../../../node_modules/@sapphire/framework/node_modules/@sapphire/pieces/dist/index.d.ts": [
         "../../../node_modules/@discordjs/collection/dist/index.d.ts"
       ],
       "../../../node_modules/@sapphire/time-utilities/dist/index.d.ts": [
@@ -1537,7 +1537,7 @@
       "../../../node_modules/@babel/types/lib/index.d.ts",
       "../../../node_modules/@discordjs/collection/dist/index.d.ts",
       "../../../node_modules/@sapphire/framework/dist/index.d.ts",
-      "../../../node_modules/@sapphire/pieces/dist/index.d.ts",
+      "../../../node_modules/@sapphire/framework/node_modules/@sapphire/pieces/dist/index.d.ts",
       "../../../node_modules/@sapphire/time-utilities/dist/index.d.ts",
       "../../../node_modules/@sapphire/time-utilities/dist/lib/Cron.d.ts",
       "../../../node_modules/@sapphire/time-utilities/dist/lib/Duration.d.ts",
@@ -1638,6 +1638,7 @@
       "../../../node_modules/lexure/dist/types/util.d.ts",
       "../../../node_modules/pretty-format/build/index.d.ts",
       "../../../node_modules/pretty-format/build/types.d.ts",
+      "../../../node_modules/tslib/tslib.d.ts",
       "../../../node_modules/typescript/lib/lib.es2015.collection.d.ts",
       "../../../node_modules/typescript/lib/lib.es2015.core.d.ts",
       "../../../node_modules/typescript/lib/lib.es2015.d.ts",
@@ -1680,7 +1681,6 @@
       "../../../node_modules/typescript/lib/lib.esnext.promise.d.ts",
       "../../../node_modules/typescript/lib/lib.esnext.string.d.ts",
       "../../../node_modules/typescript/lib/lib.esnext.weakref.d.ts",
-      "../node_modules/tslib/tslib.d.ts",
       "../src/index.ts",
       "../src/lib/Logger.ts",
       "../src/lib/LoggerLevel.ts",
