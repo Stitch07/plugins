@@ -456,9 +456,9 @@
         "signature": "7be7f76b784383fa84812ca7eb8ad10315c9d482c0d25f178645365405509d44",
         "affectsGlobalScope": false
       },
-      "../../../node_modules/@sapphire/framework/node_modules/@sapphire/pieces/dist/index.d.ts": {
-        "version": "981dd41f2d68f822dad61e159a4d326f21538aff64d22852e3db586de7f1cdea",
-        "signature": "981dd41f2d68f822dad61e159a4d326f21538aff64d22852e3db586de7f1cdea",
+      "../../../node_modules/@sapphire/pieces/dist/index.d.ts": {
+        "version": "2512dde8b1f6973134f2f7a7dcb0e51e390489f9ab397770d3a4807b865a5082",
+        "signature": "2512dde8b1f6973134f2f7a7dcb0e51e390489f9ab397770d3a4807b865a5082",
         "affectsGlobalScope": false
       },
       "../../../node_modules/@types/ws/index.d.ts": {
@@ -814,14 +814,14 @@
         "../../../node_modules/@babel/types/lib/index.d.ts"
       ],
       "../../../node_modules/@sapphire/framework/dist/index.d.ts": [
-        "../../../node_modules/@sapphire/framework/node_modules/@sapphire/pieces/dist/index.d.ts",
+        "../../../node_modules/@sapphire/pieces/dist/index.d.ts",
         "../../../node_modules/@types/node/events.d.ts",
         "../../../node_modules/@types/node/index.d.ts",
         "../../../node_modules/@types/node/url.d.ts",
         "../../../node_modules/discord.js/typings/index.d.ts",
         "../../../node_modules/lexure/dist/types/index.d.ts"
       ],
-      "../../../node_modules/@sapphire/framework/node_modules/@sapphire/pieces/dist/index.d.ts": [
+      "../../../node_modules/@sapphire/pieces/dist/index.d.ts": [
         "../../../node_modules/@discordjs/collection/dist/index.d.ts"
       ],
       "../../../node_modules/@sapphire/time-utilities/dist/index.d.ts": [
@@ -1181,14 +1181,14 @@
         "../../../node_modules/@babel/types/lib/index.d.ts"
       ],
       "../../../node_modules/@sapphire/framework/dist/index.d.ts": [
-        "../../../node_modules/@sapphire/framework/node_modules/@sapphire/pieces/dist/index.d.ts",
+        "../../../node_modules/@sapphire/pieces/dist/index.d.ts",
         "../../../node_modules/@types/node/events.d.ts",
         "../../../node_modules/@types/node/index.d.ts",
         "../../../node_modules/@types/node/url.d.ts",
         "../../../node_modules/discord.js/typings/index.d.ts",
         "../../../node_modules/lexure/dist/types/index.d.ts"
       ],
-      "../../../node_modules/@sapphire/framework/node_modules/@sapphire/pieces/dist/index.d.ts": [
+      "../../../node_modules/@sapphire/pieces/dist/index.d.ts": [
         "../../../node_modules/@discordjs/collection/dist/index.d.ts"
       ],
       "../../../node_modules/@sapphire/time-utilities/dist/index.d.ts": [
@@ -1537,7 +1537,7 @@
       "../../../node_modules/@babel/types/lib/index.d.ts",
       "../../../node_modules/@discordjs/collection/dist/index.d.ts",
       "../../../node_modules/@sapphire/framework/dist/index.d.ts",
-      "../../../node_modules/@sapphire/framework/node_modules/@sapphire/pieces/dist/index.d.ts",
+      "../../../node_modules/@sapphire/pieces/dist/index.d.ts",
       "../../../node_modules/@sapphire/time-utilities/dist/index.d.ts",
       "../../../node_modules/@sapphire/time-utilities/dist/lib/Cron.d.ts",
       "../../../node_modules/@sapphire/time-utilities/dist/lib/Duration.d.ts",
