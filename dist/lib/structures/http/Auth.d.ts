@@ -1,10 +1,11 @@
+import type { Snowflake } from 'discord-api-types/v8';
 export declare class Auth {
     #private;
     /**
      * The client's application id, this can be retrieved in Discord Developer Portal at https://discord.com/developers/applications.
      * @since 1.0.0
      */
-    id: string;
+    id: Snowflake;
     /**
      * The name for the cookie, this will be used to identify a Secure HttpOnly cookie.
      * @since 1.0.0
