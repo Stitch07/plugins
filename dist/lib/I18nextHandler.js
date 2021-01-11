@@ -73,7 +73,7 @@ class I18nextHandler {
      * @since 1.0.0
      */
     async init() {
-        var _a, _b, _c, _d, _e;
+        var _a, _b, _c, _d, _e, _f, _g;
         const { namespaces, languages } = await this.walkLanguageDirectory(this.languagesDir);
         i18next_1.default.use(i18next_fs_backend_1.default);
         await i18next_1.default.init(utilities_1.mergeDefault({
@@ -87,7 +87,7 @@ class I18nextHandler {
             defaultNS: (_d = (_c = this.options) === null || _c === void 0 ? void 0 : _c.defaultNS) !== null && _d !== void 0 ? _d : 'default',
             ns: namespaces,
             preload: languages
-        }, (_e = this.options) === null || _e === void 0 ? void 0 : _e.i18next));
+        }, utilities_1.isFunction((_e = this.options) === null || _e === void 0 ? void 0 : _e.i18next) ? (_f = this.options) === null || _f === void 0 ? void 0 : _f.i18next(namespaces, languages) : (_g = this.options) === null || _g === void 0 ? void 0 : _g.i18next));
         for (const item of languages) {
             this.languages.set(item, i18next_1.default.getFixedT(item));
         }
