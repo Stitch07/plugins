@@ -1,5 +1,6 @@
 import { Awaited } from '@sapphire/utilities';
 import { StringMap, TFunction, TOptions } from 'i18next';
+import { i18nextFsBackend } from 'i18next-fs-backend';
 import type { I18nOptions } from './types/options';
 /**
  * A generalised class for handling `i18next` JSON files and their discovery.
@@ -12,16 +13,31 @@ export declare class I18nextHandler {
      */
     languagesLoaded: boolean;
     /**
+     * A `Set` of initially loaded namespaces.
+     * @since 1.2.0
+     */
+    namespaces: Set<string>;
+    /**
      * A `Map` of `i18next` language functions keyed by their language code.
      * @since 1.0.0
      */
     readonly languages: Map<string, TFunction>;
     /**
      * The options I18nextHandler was initialized with in the client.
+     * @since 1.0.0
      */
     readonly options?: I18nOptions;
-    private readonly languagesDir;
-    private readonly backendOptions;
+    /**
+     * The director passed to `i18next-fs-backend`.
+     * Also used in {@link I18nextHandler.walkLanguageDirectory}.
+     * @since 1.2.0
+     */
+    readonly languagesDir: string;
+    /**
+     * The backend options for `i18next-fs-backend` used by `i18next`.
+     * @since 1.0.0
+     */
+    protected readonly backendOptions: i18nextFsBackend.i18nextFsBackendOptions;
     /**
      * @param options The options that `i18next`, `i18next-fs-backend`, and {@link I18nextHandler} should use.
      * @since 1.0.0
@@ -54,9 +70,8 @@ export declare class I18nextHandler {
      * @param namespaces The currently known namespaces.
      * @param current The directory currently being traversed.
      * @since 1.0.0
-     * @protected
      */
-    protected walkLanguageDirectory(dir: string, namespaces?: string[], current?: string): Promise<{
+    walkLanguageDirectory(dir: string, namespaces?: string[], current?: string): Promise<{
         namespaces: string[];
         languages: string[];
     }>;

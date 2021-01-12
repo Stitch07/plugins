@@ -31,6 +31,16 @@ class I18nextHandler {
             value: false
         });
         /**
+         * A `Set` of initially loaded namespaces.
+         * @since 1.2.0
+         */
+        Object.defineProperty(this, "namespaces", {
+            enumerable: true,
+            configurable: true,
+            writable: true,
+            value: new Set()
+        });
+        /**
          * A `Map` of `i18next` language functions keyed by their language code.
          * @since 1.0.0
          */
@@ -42,6 +52,7 @@ class I18nextHandler {
         });
         /**
          * The options I18nextHandler was initialized with in the client.
+         * @since 1.0.0
          */
         Object.defineProperty(this, "options", {
             enumerable: true,
@@ -49,12 +60,21 @@ class I18nextHandler {
             writable: true,
             value: void 0
         });
+        /**
+         * The director passed to `i18next-fs-backend`.
+         * Also used in {@link I18nextHandler.walkLanguageDirectory}.
+         * @since 1.2.0
+         */
         Object.defineProperty(this, "languagesDir", {
             enumerable: true,
             configurable: true,
             writable: true,
             value: void 0
         });
+        /**
+         * The backend options for `i18next-fs-backend` used by `i18next`.
+         * @since 1.0.0
+         */
         Object.defineProperty(this, "backendOptions", {
             enumerable: true,
             configurable: true,
@@ -88,6 +108,7 @@ class I18nextHandler {
             ns: namespaces,
             preload: languages
         }, utilities_1.isFunction((_e = this.options) === null || _e === void 0 ? void 0 : _e.i18next) ? (_f = this.options) === null || _f === void 0 ? void 0 : _f.i18next(namespaces, languages) : (_g = this.options) === null || _g === void 0 ? void 0 : _g.i18next));
+        this.namespaces = new Set(namespaces);
         for (const item of languages) {
             this.languages.set(item, i18next_1.default.getFixedT(item));
         }
@@ -132,7 +153,6 @@ class I18nextHandler {
      * @param namespaces The currently known namespaces.
      * @param current The directory currently being traversed.
      * @since 1.0.0
-     * @protected
      */
     async walkLanguageDirectory(dir, namespaces = [], current = '') {
         const directory = await promises_1.opendir(dir);
