@@ -267,13 +267,13 @@
         "affectsGlobalScope": false
       },
       "../../../node_modules/@types/node/domain.d.ts": {
-        "version": "cde4d7f6274468180fa39847b183aec22626e8212ff885d535c53f4cd7c225fd",
-        "signature": "cde4d7f6274468180fa39847b183aec22626e8212ff885d535c53f4cd7c225fd",
+        "version": "2866a528b2708aa272ec3eaafd3c980abb23aec1ef831cfc5eb2186b98c37ce5",
+        "signature": "2866a528b2708aa272ec3eaafd3c980abb23aec1ef831cfc5eb2186b98c37ce5",
         "affectsGlobalScope": true
       },
       "../../../node_modules/@types/node/events.d.ts": {
-        "version": "365e8358843a23944be84b810b1f774ea0223adfccc085f30fd7f4c13dc8a09f",
-        "signature": "365e8358843a23944be84b810b1f774ea0223adfccc085f30fd7f4c13dc8a09f",
+        "version": "153d835dc32985120790e10102834b0a5bd979bb5e42bfbb33c0ff6260cf03ce",
+        "signature": "153d835dc32985120790e10102834b0a5bd979bb5e42bfbb33c0ff6260cf03ce",
         "affectsGlobalScope": true
       },
       "../../../node_modules/@types/node/fs.d.ts": {
@@ -357,8 +357,8 @@
         "affectsGlobalScope": false
       },
       "../../../node_modules/@types/node/stream.d.ts": {
-        "version": "272a46cc8f494677af587d17939e61e7db2b1925633e4da0c186ba17f6732521",
-        "signature": "272a46cc8f494677af587d17939e61e7db2b1925633e4da0c186ba17f6732521",
+        "version": "e7b5a3f40f19d9eea71890c70dfb37ac5dd82cbffe5f95bc8f23c536455732d0",
+        "signature": "e7b5a3f40f19d9eea71890c70dfb37ac5dd82cbffe5f95bc8f23c536455732d0",
         "affectsGlobalScope": false
       },
       "../../../node_modules/@types/node/string_decoder.d.ts": {
@@ -532,8 +532,8 @@
         "affectsGlobalScope": false
       },
       "../../../node_modules/@sapphire/framework/dist/index.d.ts": {
-        "version": "cb39f558e69d67a89c53cd955d6bbc013010b86f8d1359ed6c9d351db2ac48c1",
-        "signature": "cb39f558e69d67a89c53cd955d6bbc013010b86f8d1359ed6c9d351db2ac48c1",
+        "version": "48fd92ed710bf5123f4856dfc88e4b477915fc87ed1579ca8289ba9b2cf01afc",
+        "signature": "48fd92ed710bf5123f4856dfc88e4b477915fc87ed1579ca8289ba9b2cf01afc",
         "affectsGlobalScope": false
       },
       "../../../node_modules/colorette/colorette.d.ts": {
@@ -726,21 +726,6 @@
         "signature": "e437d83044ba17246a861aa9691aa14223ff4a9d6f338ab1269c41c758586a88",
         "affectsGlobalScope": false
       },
-      "../../../node_modules/form-data/index.d.ts": {
-        "version": "cbb7029e32a6a72178cda8baa9129b1ee6d1d779a35e46c780e38b4909d42a89",
-        "signature": "cbb7029e32a6a72178cda8baa9129b1ee6d1d779a35e46c780e38b4909d42a89",
-        "affectsGlobalScope": false
-      },
-      "../../../node_modules/@types/node-fetch/externals.d.ts": {
-        "version": "972f1e91dab93b182624a17eeed02f683b8cb3fefbda7b689cc84570029d5f73",
-        "signature": "972f1e91dab93b182624a17eeed02f683b8cb3fefbda7b689cc84570029d5f73",
-        "affectsGlobalScope": false
-      },
-      "../../../node_modules/@types/node-fetch/index.d.ts": {
-        "version": "f51382950fa81e3a54e9fd9f343fe583cfbb221f15a51936e12411699347effe",
-        "signature": "f51382950fa81e3a54e9fd9f343fe583cfbb221f15a51936e12411699347effe",
-        "affectsGlobalScope": false
-      },
       "../../../node_modules/@types/normalize-package-data/index.d.ts": {
         "version": "c9ad058b2cc9ce6dc2ed92960d6d009e8c04bef46d3f5312283debca6869f613",
         "signature": "c9ad058b2cc9ce6dc2ed92960d6d009e8c04bef46d3f5312283debca6869f613",
@@ -880,13 +865,6 @@
         "../../../node_modules/jest-diff/build/index.d.ts",
         "../../../node_modules/pretty-format/build/index.d.ts"
       ],
-      "../../../node_modules/@types/node-fetch/index.d.ts": [
-        "../../../node_modules/@types/node-fetch/externals.d.ts",
-        "../../../node_modules/@types/node/http.d.ts",
-        "../../../node_modules/@types/node/index.d.ts",
-        "../../../node_modules/@types/node/url.d.ts",
-        "../../../node_modules/form-data/index.d.ts"
-      ],
       "../../../node_modules/@types/node/base.d.ts": [
         "../../../node_modules/@types/node/assert.d.ts",
         "../../../node_modules/@types/node/ts3.6/base.d.ts"
@@ -919,6 +897,9 @@
         "../../../node_modules/@types/node/net.d.ts"
       ],
       "../../../node_modules/@types/node/domain.d.ts": [
+        "../../../node_modules/@types/node/events.d.ts"
+      ],
+      "../../../node_modules/@types/node/events.d.ts": [
         "../../../node_modules/@types/node/events.d.ts"
       ],
       "../../../node_modules/@types/node/fs.d.ts": [
@@ -1075,11 +1056,6 @@
         "../../../node_modules/@types/node/fs.d.ts",
         "../../../node_modules/@types/node/stream.d.ts",
         "../../../node_modules/@types/ws/index.d.ts"
-      ],
-      "../../../node_modules/form-data/index.d.ts": [
-        "../../../node_modules/@types/node/http.d.ts",
-        "../../../node_modules/@types/node/index.d.ts",
-        "../../../node_modules/@types/node/stream.d.ts"
       ],
       "../../../node_modules/jest-diff/build/diffLines.d.ts": [
         "../../../node_modules/jest-diff/build/cleanupSemantic.d.ts",
@@ -1247,13 +1223,6 @@
         "../../../node_modules/jest-diff/build/index.d.ts",
         "../../../node_modules/pretty-format/build/index.d.ts"
       ],
-      "../../../node_modules/@types/node-fetch/index.d.ts": [
-        "../../../node_modules/@types/node-fetch/externals.d.ts",
-        "../../../node_modules/@types/node/http.d.ts",
-        "../../../node_modules/@types/node/index.d.ts",
-        "../../../node_modules/@types/node/url.d.ts",
-        "../../../node_modules/form-data/index.d.ts"
-      ],
       "../../../node_modules/@types/node/base.d.ts": [
         "../../../node_modules/@types/node/assert.d.ts",
         "../../../node_modules/@types/node/ts3.6/base.d.ts"
@@ -1286,6 +1255,9 @@
         "../../../node_modules/@types/node/net.d.ts"
       ],
       "../../../node_modules/@types/node/domain.d.ts": [
+        "../../../node_modules/@types/node/events.d.ts"
+      ],
+      "../../../node_modules/@types/node/events.d.ts": [
         "../../../node_modules/@types/node/events.d.ts"
       ],
       "../../../node_modules/@types/node/fs.d.ts": [
@@ -1443,11 +1415,6 @@
         "../../../node_modules/@types/node/stream.d.ts",
         "../../../node_modules/@types/ws/index.d.ts"
       ],
-      "../../../node_modules/form-data/index.d.ts": [
-        "../../../node_modules/@types/node/http.d.ts",
-        "../../../node_modules/@types/node/index.d.ts",
-        "../../../node_modules/@types/node/stream.d.ts"
-      ],
       "../../../node_modules/jest-diff/build/diffLines.d.ts": [
         "../../../node_modules/jest-diff/build/cleanupSemantic.d.ts",
         "../../../node_modules/jest-diff/build/types.d.ts"
@@ -1559,8 +1526,6 @@
       "../../../node_modules/@types/json-schema/index.d.ts",
       "../../../node_modules/@types/minimatch/index.d.ts",
       "../../../node_modules/@types/minimist/index.d.ts",
-      "../../../node_modules/@types/node-fetch/externals.d.ts",
-      "../../../node_modules/@types/node-fetch/index.d.ts",
       "../../../node_modules/@types/node/assert.d.ts",
       "../../../node_modules/@types/node/async_hooks.d.ts",
       "../../../node_modules/@types/node/base.d.ts",
@@ -1617,7 +1582,6 @@
       "../../../node_modules/@types/yargs/index.d.ts",
       "../../../node_modules/colorette/colorette.d.ts",
       "../../../node_modules/discord.js/typings/index.d.ts",
-      "../../../node_modules/form-data/index.d.ts",
       "../../../node_modules/i18next/index.d.ts",
       "../../../node_modules/jest-diff/build/cleanupSemantic.d.ts",
       "../../../node_modules/jest-diff/build/diffLines.d.ts",
