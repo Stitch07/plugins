@@ -726,6 +726,21 @@
         "signature": "e437d83044ba17246a861aa9691aa14223ff4a9d6f338ab1269c41c758586a88",
         "affectsGlobalScope": false
       },
+      "../../../node_modules/form-data/index.d.ts": {
+        "version": "cbb7029e32a6a72178cda8baa9129b1ee6d1d779a35e46c780e38b4909d42a89",
+        "signature": "cbb7029e32a6a72178cda8baa9129b1ee6d1d779a35e46c780e38b4909d42a89",
+        "affectsGlobalScope": false
+      },
+      "../../../node_modules/@types/node-fetch/externals.d.ts": {
+        "version": "972f1e91dab93b182624a17eeed02f683b8cb3fefbda7b689cc84570029d5f73",
+        "signature": "972f1e91dab93b182624a17eeed02f683b8cb3fefbda7b689cc84570029d5f73",
+        "affectsGlobalScope": false
+      },
+      "../../../node_modules/@types/node-fetch/index.d.ts": {
+        "version": "9895aad6ad1d505e2b03c8e41c8643b60a813ad130eb68f843b736b2db7d42e1",
+        "signature": "9895aad6ad1d505e2b03c8e41c8643b60a813ad130eb68f843b736b2db7d42e1",
+        "affectsGlobalScope": false
+      },
       "../../../node_modules/@types/normalize-package-data/index.d.ts": {
         "version": "c9ad058b2cc9ce6dc2ed92960d6d009e8c04bef46d3f5312283debca6869f613",
         "signature": "c9ad058b2cc9ce6dc2ed92960d6d009e8c04bef46d3f5312283debca6869f613",
@@ -864,6 +879,13 @@
       "../../../node_modules/@types/jest/index.d.ts": [
         "../../../node_modules/jest-diff/build/index.d.ts",
         "../../../node_modules/pretty-format/build/index.d.ts"
+      ],
+      "../../../node_modules/@types/node-fetch/index.d.ts": [
+        "../../../node_modules/@types/node-fetch/externals.d.ts",
+        "../../../node_modules/@types/node/http.d.ts",
+        "../../../node_modules/@types/node/index.d.ts",
+        "../../../node_modules/@types/node/url.d.ts",
+        "../../../node_modules/form-data/index.d.ts"
       ],
       "../../../node_modules/@types/node/base.d.ts": [
         "../../../node_modules/@types/node/assert.d.ts",
@@ -1056,6 +1078,11 @@
         "../../../node_modules/@types/node/fs.d.ts",
         "../../../node_modules/@types/node/stream.d.ts",
         "../../../node_modules/@types/ws/index.d.ts"
+      ],
+      "../../../node_modules/form-data/index.d.ts": [
+        "../../../node_modules/@types/node/http.d.ts",
+        "../../../node_modules/@types/node/index.d.ts",
+        "../../../node_modules/@types/node/stream.d.ts"
       ],
       "../../../node_modules/jest-diff/build/diffLines.d.ts": [
         "../../../node_modules/jest-diff/build/cleanupSemantic.d.ts",
@@ -1223,6 +1250,13 @@
         "../../../node_modules/jest-diff/build/index.d.ts",
         "../../../node_modules/pretty-format/build/index.d.ts"
       ],
+      "../../../node_modules/@types/node-fetch/index.d.ts": [
+        "../../../node_modules/@types/node-fetch/externals.d.ts",
+        "../../../node_modules/@types/node/http.d.ts",
+        "../../../node_modules/@types/node/index.d.ts",
+        "../../../node_modules/@types/node/url.d.ts",
+        "../../../node_modules/form-data/index.d.ts"
+      ],
       "../../../node_modules/@types/node/base.d.ts": [
         "../../../node_modules/@types/node/assert.d.ts",
         "../../../node_modules/@types/node/ts3.6/base.d.ts"
@@ -1415,6 +1449,11 @@
         "../../../node_modules/@types/node/stream.d.ts",
         "../../../node_modules/@types/ws/index.d.ts"
       ],
+      "../../../node_modules/form-data/index.d.ts": [
+        "../../../node_modules/@types/node/http.d.ts",
+        "../../../node_modules/@types/node/index.d.ts",
+        "../../../node_modules/@types/node/stream.d.ts"
+      ],
       "../../../node_modules/jest-diff/build/diffLines.d.ts": [
         "../../../node_modules/jest-diff/build/cleanupSemantic.d.ts",
         "../../../node_modules/jest-diff/build/types.d.ts"
@@ -1526,6 +1565,8 @@
       "../../../node_modules/@types/json-schema/index.d.ts",
       "../../../node_modules/@types/minimatch/index.d.ts",
       "../../../node_modules/@types/minimist/index.d.ts",
+      "../../../node_modules/@types/node-fetch/externals.d.ts",
+      "../../../node_modules/@types/node-fetch/index.d.ts",
       "../../../node_modules/@types/node/assert.d.ts",
       "../../../node_modules/@types/node/async_hooks.d.ts",
       "../../../node_modules/@types/node/base.d.ts",
@@ -1582,6 +1623,7 @@
       "../../../node_modules/@types/yargs/index.d.ts",
       "../../../node_modules/colorette/colorette.d.ts",
       "../../../node_modules/discord.js/typings/index.d.ts",
+      "../../../node_modules/form-data/index.d.ts",
       "../../../node_modules/i18next/index.d.ts",
       "../../../node_modules/jest-diff/build/cleanupSemantic.d.ts",
       "../../../node_modules/jest-diff/build/diffLines.d.ts",
