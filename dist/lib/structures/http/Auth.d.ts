@@ -40,7 +40,7 @@ export declare class Auth {
      * @param token An data to decrypt
      * @param secret The secret to decrypt the data with
      */
-    decrypt(token: string): AuthData;
+    decrypt(token: string): AuthData | null;
     static create(options?: ServerOptionsAuth): Auth | null;
 }
 export interface AuthData {

@@ -82,7 +82,12 @@ class Auth {
     decrypt(token) {
         const [data, iv] = token.split('.');
         const decipher = crypto_1.createDecipheriv('aes-256-cbc', tslib_1.__classPrivateFieldGet(this, _secret), Buffer.from(iv, 'base64'));
-        return JSON.parse(decipher.update(data, 'base64', 'utf8') + decipher.final('utf8'));
+        try {
+            return JSON.parse(decipher.update(data, 'base64', 'utf8') + decipher.final('utf8'));
+        }
+        catch {
+            return null;
+        }
     }
     static create(options) {
         if (!(options === null || options === void 0 ? void 0 : options.secret) || !options.id)
