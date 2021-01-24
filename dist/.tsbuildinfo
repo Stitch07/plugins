@@ -457,8 +457,8 @@
         "affectsGlobalScope": false
       },
       "../../../node_modules/@sapphire/pieces/dist/index.d.ts": {
-        "version": "2512dde8b1f6973134f2f7a7dcb0e51e390489f9ab397770d3a4807b865a5082",
-        "signature": "2512dde8b1f6973134f2f7a7dcb0e51e390489f9ab397770d3a4807b865a5082",
+        "version": "c39b151e7d88e3751ec8ef9b2ac32f3545c3d7a7832dcace7318fa24c6c96805",
+        "signature": "c39b151e7d88e3751ec8ef9b2ac32f3545c3d7a7832dcace7318fa24c6c96805",
         "affectsGlobalScope": false
       },
       "../../../node_modules/@types/ws/index.d.ts": {
