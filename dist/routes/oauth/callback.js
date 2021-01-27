@@ -44,14 +44,15 @@ class PluginRoute extends Route_1.Route {
         if (value === null) {
             return response.status(500 /* InternalServerError */).json({ error: 'Failed to fetch the token.' });
         }
-        const data = await this.fetchData(value.access_token);
+        const now = Date.now();
+        const auth = this.context.server.auth;
+        const data = await auth.fetchData(value.access_token);
         if (!data.user) {
             return response.status(500 /* InternalServerError */).json({ error: 'Failed to fetch the user.' });
         }
-        const auth = this.context.server.auth;
         const token = auth.encrypt({
             id: data.user.id,
-            expires: value.expires_in,
+            expires: now + value.expires_in,
             refresh: value.refresh_token,
             token: value.access_token
         });
@@ -83,24 +84,6 @@ class PluginRoute extends Route_1.Route {
             return json;
         this.context.client.logger.error(json);
         return null;
-    }
-    async fetchData(token) {
-        const [user, guilds, connections] = await Promise.all([
-            this.fetchInformation('identify', token, 'https://discord.com/api/v8/users/@me'),
-            this.fetchInformation('guilds', token, 'https://discord.com/api/v8/users/@me/guilds'),
-            this.fetchInformation('connections', token, 'https://discord.com/api/v8/users/@me/connections')
-        ]);
-        return { user, guilds, connections };
-    }
-    async fetchInformation(scope, token, url) {
-        if (!this.scopes.includes(scope))
-            return undefined;
-        const result = await node_fetch_1.default(url, {
-            headers: {
-                authorization: `Bearer ${token}`
-            }
-        });
-        return result.ok ? (await result.json()) : null;
     }
 }
 exports.PluginRoute = PluginRoute;

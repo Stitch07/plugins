@@ -1,4 +1,4 @@
-import type { Snowflake } from 'discord-api-types/v8';
+import type { RESTGetAPICurrentUserConnectionsResult, RESTGetAPICurrentUserGuildsResult, RESTGetAPICurrentUserResult, Snowflake } from 'discord-api-types/v8';
 export declare class Auth {
     #private;
     /**
@@ -21,6 +21,11 @@ export declare class Auth {
      * @since 1.0.0
      */
     redirect: string | undefined;
+    /**
+     * The transformers used for [[Auth.fetchData]].
+     * @since 1.4.0
+     */
+    transformers: LoginDataTransformer[];
     private constructor();
     /**
      * The client secret, this can be retrieved in Discord Developer Portal at https://discord.com/developers/applications.
@@ -41,12 +46,39 @@ export declare class Auth {
      * @param secret The secret to decrypt the data with
      */
     decrypt(token: string): AuthData | null;
+    /**
+     * Retrieves the data for a specific user.
+     * @since 1.4.0
+     * @param token The access token from the user.
+     */
+    fetchData(token: string): Promise<LoginData>;
+    private fetchInformation;
     static create(options?: ServerOptionsAuth): Auth | null;
 }
+/**
+ * Defines the authentication data, this is to be encrypted and decrypted by the server.
+ * @since 1.0.0
+ */
 export interface AuthData {
+    /**
+     * The user ID.
+     * @since 1.0.0
+     */
     id: string;
+    /**
+     * The timestamp at which the token expires.
+     * @since 1.0.0
+     */
     expires: number;
+    /**
+     * The refresh token.
+     * @since 1.0.0
+     */
     refresh: string;
+    /**
+     * The access token.
+     * @since 1.0.0
+     */
     token: string;
 }
 /**
@@ -81,5 +113,31 @@ export interface ServerOptionsAuth {
      * @since 1.0.0
      */
     redirect?: string;
+    /**
+     * The login data transformers used for [[Auth.fetchData]].
+     * @since 1.4.0
+     * @default []
+     */
+    transformers?: LoginDataTransformer[];
+}
+/**
+ * The login data sent when fetching data from a user.
+ * @since 1.4.0
+ */
+export interface LoginData {
+    user?: RESTGetAPICurrentUserResult | null;
+    guilds?: RESTGetAPICurrentUserGuildsResult | null;
+    connections?: RESTGetAPICurrentUserConnectionsResult | null;
+}
+/**
+ * A login data transformer.
+ * @since 1.4.0
+ */
+export interface LoginDataTransformer {
+    /**
+     * Transforms the object by mutating its properties or adding new ones.
+     * @since 1.4.0
+     */
+    <T extends LoginData>(data: LoginData): T;
 }
 //# sourceMappingURL=Auth.d.ts.map

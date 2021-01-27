@@ -4,9 +4,10 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.Auth = void 0;
 const tslib_1 = require("tslib");
 const crypto_1 = require("crypto");
+const node_fetch_1 = tslib_1.__importDefault(require("node-fetch"));
 class Auth {
     constructor(options) {
-        var _a, _b;
+        var _a, _b, _c;
         /**
          * The client's application id, this can be retrieved in Discord Developer Portal at https://discord.com/developers/applications.
          * @since 1.0.0
@@ -47,6 +48,16 @@ class Auth {
             writable: true,
             value: void 0
         });
+        /**
+         * The transformers used for [[Auth.fetchData]].
+         * @since 1.4.0
+         */
+        Object.defineProperty(this, "transformers", {
+            enumerable: true,
+            configurable: true,
+            writable: true,
+            value: void 0
+        });
         // eslint-disable-next-line @typescript-eslint/explicit-member-accessibility
         _secret.set(this, void 0);
         this.id = options.id;
@@ -54,6 +65,7 @@ class Auth {
         this.scopes = (_b = options.scopes) !== null && _b !== void 0 ? _b : ['identify'];
         this.redirect = options.redirect;
         tslib_1.__classPrivateFieldSet(this, _secret, options.secret);
+        this.transformers = (_c = options.transformers) !== null && _c !== void 0 ? _c : [];
     }
     /**
      * The client secret, this can be retrieved in Discord Developer Portal at https://discord.com/developers/applications.
@@ -83,11 +95,36 @@ class Auth {
         const [data, iv] = token.split('.');
         const decipher = crypto_1.createDecipheriv('aes-256-cbc', tslib_1.__classPrivateFieldGet(this, _secret), Buffer.from(iv, 'base64'));
         try {
-            return JSON.parse(decipher.update(data, 'base64', 'utf8') + decipher.final('utf8'));
+            const parsed = JSON.parse(decipher.update(data, 'base64', 'utf8') + decipher.final('utf8'));
+            // If the token expired, return null:
+            return parsed.expires >= Date.now() ? null : parsed;
         }
         catch {
             return null;
         }
+    }
+    /**
+     * Retrieves the data for a specific user.
+     * @since 1.4.0
+     * @param token The access token from the user.
+     */
+    async fetchData(token) {
+        const [user, guilds, connections] = await Promise.all([
+            this.fetchInformation('identify', token, 'https://discord.com/api/v8/users/@me'),
+            this.fetchInformation('guilds', token, 'https://discord.com/api/v8/users/@me/guilds'),
+            this.fetchInformation('connections', token, 'https://discord.com/api/v8/users/@me/connections')
+        ]);
+        return this.transformers.reduce((data, fn) => fn(data), { user, guilds, connections });
+    }
+    async fetchInformation(scope, token, url) {
+        if (!this.scopes.includes(scope))
+            return undefined;
+        const result = await node_fetch_1.default(url, {
+            headers: {
+                authorization: `Bearer ${token}`
+            }
+        });
+        return result.ok ? (await result.json()) : null;
     }
     static create(options) {
         if (!(options === null || options === void 0 ? void 0 : options.secret) || !options.id)

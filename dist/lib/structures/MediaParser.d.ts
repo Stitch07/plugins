@@ -36,6 +36,6 @@ export declare abstract class MediaParser extends Piece {
      * @since 1.3.0
      * @param request The request to read the body from.
      */
-    protected contentStream(request: ApiRequest): ApiRequest | import("zlib").BrotliDecompress | null;
+    protected contentStream(request: ApiRequest): import("zlib").BrotliDecompress | ApiRequest | null;
 }
 //# sourceMappingURL=MediaParser.d.ts.map
