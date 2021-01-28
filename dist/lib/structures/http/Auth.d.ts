@@ -1,3 +1,4 @@
+import { Awaited } from '@sapphire/utilities';
 import type { RESTGetAPICurrentUserConnectionsResult, RESTGetAPICurrentUserGuildsResult, RESTGetAPICurrentUserResult, Snowflake } from 'discord-api-types/v8';
 export declare class Auth {
     #private;
@@ -125,19 +126,31 @@ export interface ServerOptionsAuth {
  * @since 1.4.0
  */
 export interface LoginData {
+    /**
+     * The user data, defined when the `'identify'` scope is defined.
+     * @since 1.4.0
+     */
     user?: RESTGetAPICurrentUserResult | null;
+    /**
+     * The guilds data, defined when the `'guilds'` scope is defined.
+     * @since 1.4.0
+     */
     guilds?: RESTGetAPICurrentUserGuildsResult | null;
+    /**
+     * The connections data, defined when the `'connections'` scope is defined.
+     * @since 1.4.0
+     */
     connections?: RESTGetAPICurrentUserConnectionsResult | null;
 }
 /**
  * A login data transformer.
  * @since 1.4.0
  */
-export interface LoginDataTransformer {
+export interface LoginDataTransformer<T extends LoginData = LoginData> {
     /**
      * Transforms the object by mutating its properties or adding new ones.
      * @since 1.4.0
      */
-    <T extends LoginData>(data: LoginData): T;
+    (data: LoginData): Awaited<T>;
 }
 //# sourceMappingURL=Auth.d.ts.map

@@ -3,6 +3,7 @@ var _secret;
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Auth = void 0;
 const tslib_1 = require("tslib");
+const utilities_1 = require("@sapphire/utilities");
 const crypto_1 = require("crypto");
 const node_fetch_1 = tslib_1.__importDefault(require("node-fetch"));
 class Auth {
@@ -109,12 +110,22 @@ class Auth {
      * @param token The access token from the user.
      */
     async fetchData(token) {
+        // Fetch the information:
         const [user, guilds, connections] = await Promise.all([
             this.fetchInformation('identify', token, 'https://discord.com/api/v8/users/@me'),
             this.fetchInformation('guilds', token, 'https://discord.com/api/v8/users/@me/guilds'),
             this.fetchInformation('connections', token, 'https://discord.com/api/v8/users/@me/connections')
         ]);
-        return this.transformers.reduce((data, fn) => fn(data), { user, guilds, connections });
+        // Transform the information:
+        let data = { user, guilds, connections };
+        for (const transformer of this.transformers) {
+            const result = transformer(data);
+            if (utilities_1.isThenable(result))
+                data = await result;
+            else
+                data = result;
+        }
+        return data;
     }
     async fetchInformation(scope, token, url) {
         if (!this.scopes.includes(scope))
