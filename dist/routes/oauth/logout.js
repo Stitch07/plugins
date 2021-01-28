@@ -49,7 +49,7 @@ class PluginRoute extends Route_1.Route {
     success(response) {
         // Sending an empty cookie with "expires" set to 1970-01-01 makes the browser instantly remove the cookie.
         response.cookies.add(this.context.server.auth.cookie, '', { expires: new Date(0) });
-        return response.json({ sucess: true });
+        return response.json({ success: true });
     }
     async revoke(token) {
         const auth = this.context.server.auth;
