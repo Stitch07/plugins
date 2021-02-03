@@ -142,8 +142,10 @@ class I18nextHandler {
         const language = this.languages.get(locale);
         if (!language)
             throw new ReferenceError('Invalid language provided');
+        const missingHandlers = ((_a = this.options) === null || _a === void 0 ? void 0 : _a.defaultMissingKey) ? { defaultValue: language((_b = this.options) === null || _b === void 0 ? void 0 : _b.defaultMissingKey, { replace: { key } }) }
+            : {};
         return language(key, utilities_1.mergeDefault({
-            defaultValue: language((_b = (_a = this.options) === null || _a === void 0 ? void 0 : _a.defaultMissingKey) !== null && _b !== void 0 ? _b : 'default:default', { replace: { key } }),
+            ...missingHandlers,
             replace
         }, options));
     }
