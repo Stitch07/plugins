@@ -457,8 +457,8 @@
         "affectsGlobalScope": false
       },
       "../../../node_modules/@sapphire/pieces/dist/index.d.ts": {
-        "version": "c39b151e7d88e3751ec8ef9b2ac32f3545c3d7a7832dcace7318fa24c6c96805",
-        "signature": "c39b151e7d88e3751ec8ef9b2ac32f3545c3d7a7832dcace7318fa24c6c96805",
+        "version": "3b760e64d787fa692effd42744802321297c227d83eefbd89d9daed143a83435",
+        "signature": "3b760e64d787fa692effd42744802321297c227d83eefbd89d9daed143a83435",
         "affectsGlobalScope": false
       },
       "../../../node_modules/@types/ws/index.d.ts": {
@@ -532,8 +532,8 @@
         "affectsGlobalScope": false
       },
       "../../../node_modules/@sapphire/framework/dist/index.d.ts": {
-        "version": "48fd92ed710bf5123f4856dfc88e4b477915fc87ed1579ca8289ba9b2cf01afc",
-        "signature": "48fd92ed710bf5123f4856dfc88e4b477915fc87ed1579ca8289ba9b2cf01afc",
+        "version": "f4698ff125f994fd48290d213f84738b8b477bf96553d4dc6ed8bc3e58873e75",
+        "signature": "f4698ff125f994fd48290d213f84738b8b477bf96553d4dc6ed8bc3e58873e75",
         "affectsGlobalScope": false
       },
       "../../../node_modules/colorette/colorette.d.ts": {
@@ -814,6 +814,7 @@
         "../../../node_modules/@babel/types/lib/index.d.ts"
       ],
       "../../../node_modules/@sapphire/framework/dist/index.d.ts": [
+        "../../../node_modules/@discordjs/collection/dist/index.d.ts",
         "../../../node_modules/@sapphire/pieces/dist/index.d.ts",
         "../../../node_modules/@types/node/events.d.ts",
         "../../../node_modules/@types/node/index.d.ts",
@@ -1184,6 +1185,7 @@
         "../../../node_modules/@babel/types/lib/index.d.ts"
       ],
       "../../../node_modules/@sapphire/framework/dist/index.d.ts": [
+        "../../../node_modules/@discordjs/collection/dist/index.d.ts",
         "../../../node_modules/@sapphire/pieces/dist/index.d.ts",
         "../../../node_modules/@types/node/events.d.ts",
         "../../../node_modules/@types/node/index.d.ts",
