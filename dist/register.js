@@ -1,6 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Api = void 0;
+require("./index");
 const framework_1 = require("@sapphire/framework");
 const path_1 = require("path");
 const Server_1 = require("./lib/structures/http/Server");
@@ -13,10 +14,11 @@ class Api extends framework_1.Plugin {
      */
     static [framework_1.postInitialization](options) {
         this.server = new Server_1.Server(options.api);
-        this.registerStore(this.server.routes) //
-            .registerStore(this.server.mediaParsers)
-            .registerStore(this.server.middlewares);
-        this.events.registerPath(path_1.join(__dirname, 'events'));
+        this.stores
+            .register(this.server.routes) //
+            .register(this.server.mediaParsers)
+            .register(this.server.middlewares);
+        this.stores.get('events').registerPath(path_1.join(__dirname, 'events'));
         this.server.routes.registerPath(path_1.join(__dirname, 'routes'));
         this.server.middlewares.registerPath(path_1.join(__dirname, 'middlewares'));
         this.server.mediaParsers.registerPath(path_1.join(__dirname, 'mediaParsers'));

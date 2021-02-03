@@ -1,4 +1,7 @@
 import type { Server, ServerOptions } from './lib/structures/http/Server';
+import type { MediaParserStore } from './lib/structures/MediaParserStore';
+import type { MiddlewareStore } from './lib/structures/MiddlewareStore';
+import type { RouteStore } from './lib/structures/RouteStore';
 export * from './lib/structures/api/ApiRequest';
 export * from './lib/structures/api/ApiResponse';
 export * from './lib/structures/api/CookieStore';
@@ -20,6 +23,13 @@ declare module 'discord.js' {
     }
     interface ClientOptions {
         api?: ServerOptions;
+    }
+}
+declare module '@sapphire/framework' {
+    interface StoreRegistryEntries {
+        routes: RouteStore;
+        mediaParsers: MediaParserStore;
+        middlewares: MiddlewareStore;
     }
 }
 //# sourceMappingURL=index.d.ts.map
